@@ -1,0 +1,8 @@
+/* Slide-in effect for the mobile menu */
+#mobile-menu-toggle:checked ~ .mobile-menu {
+    display: block;
+}
+/* Focus effect for search bar */
+input[type="search"]:focus {
+    @apply outline-none border-indigo-500;
+}
