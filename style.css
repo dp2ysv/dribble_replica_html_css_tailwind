@@ -1,8 +1,24 @@
 /* Slide-in effect for the mobile menu */
-#mobile-menu-toggle:checked ~ .mobile-menu {
+#mobile-menu-toggle:checked~.mobile-menu {
     display: block;
 }
+
 /* Focus effect for search bar */
 input[type="search"]:focus {
     @apply outline-none border-indigo-500;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+        /* Muove l'elemento per metà della sua lunghezza totale */
+    }
+}
+
+.animate-scroll {
+    animation: scroll 30s linear infinite;
 }

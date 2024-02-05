@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,11 +9,12 @@
     <!-- Tailwind CSS Link -->
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.1.2/dist/tailwind.min.css" rel="stylesheet">
 </head>
+
 <body>
     <header class="bg-white border-b">
         <nav class="container mx-auto px-4 py-3 flex justify-between items-center">
             <a href="#" class="flex items-center">
-                <img src="/assets/A81A1D06-F641-4C77-9D24-1174BE631FD1_1_102_o.jpeg" alt="Dribbble" class="h-8 mr-4"> 
+                <img src="/assets/A81A1D06-F641-4C77-9D24-1174BE631FD1_1_102_o.jpeg" alt="Dribbble" class="h-8 mr-4">
             </a>
             <div class="hidden sm:flex space-x-4">
                 <a href="#" class="text-sm text-gray-700 hover:text-black">Find talent</a>
@@ -20,105 +22,332 @@
                 <a href="#" class="text-sm text-gray-700 hover:text-black">Learn design</a>
                 <a href="#" class="text-sm text-gray-700 hover:text-black">Jobs</a>
                 <a href="#" class="text-sm text-gray-700 hover:text-black">Go Pro</a>
-                
+
             </div>
             <div class="flex items-center space-x-4">
                 <div class="relative hidden sm:block">
-                    <input type="search" placeholder="Search..." class="pl-10 pr-4 py-2 border rounded-full text-sm w-56 focus:border-blue-500 focus:outline-none"> 
+                    <input type="search" placeholder="Search..."
+                        class="pl-10 pr-4 py-2 border rounded-full text-sm w-56 focus:border-blue-500 focus:outline-none">
                     <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
-                        <svg class="h-4 w-4 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 6h13M8 12h13m-7 6h7"></path></svg>
+                        <svg class="h-4 w-4 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M8 6h13M8 12h13m-7 6h7"></path>
+                        </svg>
                     </div>
                 </div>
                 <a href="#" class="text-sm text-gray-700 hover:text-black">Log in</a>
                 <a href="#" class="px-4 py-2 bg-blue-600 text-white rounded-full text-sm hover:bg-blue-500">Sign up</a>
-            <!-- Search and login for mobile screens -->
-            <div class="sm:hidden flex items-center space-x-2">
-                <input type="search" placeholder="Search..." class="pl-10 pr-4 py-2 border rounded-full text-sm focus:border-blue-500 focus:outline-none">
-                <a href="#" class="text-sm text-gray-700 hover:text-black">Log in</a>
+                <!-- Search and login for mobile screens -->
+                <div class="sm:hidden flex items-center space-x-2">
+                    <input type="search" placeholder="Search..."
+                        class="pl-10 pr-4 py-2 border rounded-full text-sm focus:border-blue-500 focus:outline-none">
+                    <a href="#" class="text-sm text-gray-700 hover:text-black">Log in</a>
+                </div>
             </div>
-        </div>
-        <!-- Mobile Menu Icon -->
-        <div class="sm:hidden flex items-center">
-            <button class="mobile-menu-button">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
-            </button>
-        </div>
+            <!-- Mobile Menu Icon -->
+            <div class="sm:hidden flex items-center">
+                <button class="mobile-menu-button">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
         </nav>
     </header>
     <main>
-        
-            <section class="text-center py-16 bg-gray-100">
-                <h1 class="text-5xl font-bold text-gray-800 mb-4">The world’s destination for design</h1>
-                <p class="text-xl text-gray-600 mb-8">Get inspired by the work of millions of top-rated designers & agencies around the world.</p>
-                <a href="#" class="px-6 py-3 bg-blue-600 text-white font-semibold rounded-md hover:bg-blue-500">Get started</a>
-            </section>
-        
-        
+
+        <section class="text-center py-16 bg-gray-100">
+            <h1 class="text-5xl font-bold text-gray-800 mb-4">The world’s destination for design</h1>
+            <p class="text-xl text-gray-600 mb-8">Get inspired by the work of millions of top-rated designers & agencies
+                around the world.</p>
+            <a href="#" class="px-6 py-3 bg-blue-600 text-white font-semibold rounded-md hover:bg-blue-500">Get
+                started</a>
+        </section>
+
+
         <!-- Profile grid -->
 
         <section class="bg-white py-8 overflow-hidden">
             <div class="container mx-auto px-4">
-                
-                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
-                    <!-- Example of a single profile card -->
-                    <div class="bg-gray-100 rounded-lg overflow-hidden shadow-lg">
+                <!-- Wrapper for the scrolling animation -->
+                <div class="flex whitespace-nowrap animate-scroll">
+                    <!-- Profile cards inside the scrolling wrapper -->
+                    <div class="inline-block bg-gray-100 rounded-lg overflow-hidden shadow-lg">
                         <img src="/path-to-profile-image.jpg" alt="Profile name" class="w-full">
                         <div class="p-4">
                             <h3 class="font-bold text-lg mb-1">Profile Name</h3>
                             <p class="text-gray-600 text-sm">Designer</p>
-                            <!-- Tags could be added here -->
+                        </div>
+                    </div>
+                    <div class="inline-block bg-gray-100 rounded-lg overflow-hidden shadow-lg">
+                        <img src="/path-to-profile-image.jpg" alt="Profile name" class="w-full">
+                        <div class="p-4">
+                            <h3 class="font-bold text-lg mb-1">Profile Name</h3>
+                            <p class="text-gray-600 text-sm">Designer</p>
+                        </div>
+                    </div>
+                    <div class="inline-block bg-gray-100 rounded-lg overflow-hidden shadow-lg">
+                        <img src="/path-to-profile-image.jpg" alt="Profile name" class="w-full">
+                        <div class="p-4">
+                            <h3 class="font-bold text-lg mb-1">Profile Name</h3>
+                            <p class="text-gray-600 text-sm">Designer</p>
+                        </div>
+                    </div>
+                    <div class="inline-block bg-gray-100 rounded-lg overflow-hidden shadow-lg">
+                        <img src="/path-to-profile-image.jpg" alt="Profile name" class="w-full">
+                        <div class="p-4">
+                            <h3 class="font-bold text-lg mb-1">Profile Name</h3>
+                            <p class="text-gray-600 text-sm">Designer</p>
+                        </div>
+                    </div>
+                    <div class="inline-block bg-gray-100 rounded-lg overflow-hidden shadow-lg">
+                        <img src="/path-to-profile-image.jpg" alt="Profile name" class="w-full">
+                        <div class="p-4">
+                            <h3 class="font-bold text-lg mb-1">Profile Name</h3>
+                            <p class="text-gray-600 text-sm">Designer</p>
+                        </div>
+                    </div>
+                    <div class="inline-block bg-gray-100 rounded-lg overflow-hidden shadow-lg">
+                        <img src="/path-to-profile-image.jpg" alt="Profile name" class="w-full">
+                        <div class="p-4">
+                            <h3 class="font-bold text-lg mb-1">Profile Name</h3>
+                            <p class="text-gray-600 text-sm">Designer</p>
                         </div>
                     </div>
 
-                    <div class="bg-gray-100 rounded-lg overflow-hidden shadow-lg">
-                        <img src="/path-to-profile-image.jpg" alt="Profile name" class="w-full">
-                        <div class="p-4">
-                            <h3 class="font-bold text-lg mb-1">Profile Name</h3>
-                            <p class="text-gray-600 text-sm">Designer</p>
-                            <!-- Tags could be added here -->
-                        </div>
-                    </div>
-                    <div class="bg-gray-100 rounded-lg overflow-hidden shadow-lg">
-                        <img src="/path-to-profile-image.jpg" alt="Profile name" class="w-full">
-                        <div class="p-4">
-                            <h3 class="font-bold text-lg mb-1">Profile Name</h3>
-                            <p class="text-gray-600 text-sm">Designer</p>
-                            <!-- Tags could be added here -->
-                        </div>
-                    </div>
-                    <div class="bg-gray-100 rounded-lg overflow-hidden shadow-lg">
-                        <img src="/path-to-profile-image.jpg" alt="Profile name" class="w-full">
-                        <div class="p-4">
-                            <h3 class="font-bold text-lg mb-1">Profile Name</h3>
-                            <p class="text-gray-600 text-sm">Designer</p>
-                            <!-- Tags could be added here -->
-                        </div>
-                    </div>
-                    <div class="bg-gray-100 rounded-lg overflow-hidden shadow-lg">
-                        <img src="/path-to-profile-image.jpg" alt="Profile name" class="w-full">
-                        <div class="p-4">
-                            <h3 class="font-bold text-lg mb-1">Profile Name</h3>
-                            <p class="text-gray-600 text-sm">Designer</p>
-                            <!-- Tags could be added here -->
-                        </div>
-                    </div>
-                    <div class="bg-gray-100 rounded-lg overflow-hidden shadow-lg">
-                        <img src="/path-to-profile-image.jpg" alt="Profile name" class="w-full">
-                        <div class="p-4">
-                            <h3 class="font-bold text-lg mb-1">Profile Name</h3>
-                            <p class="text-gray-600 text-sm">Designer</p>
-                            <!-- Tags could be added here -->
-                        </div>
-                    </div>
-                    <!-- Repeat for other profiles -->
+
                 </div>
             </div>
         </section>
-        
-        <!-- Featured designs grid will go here -->
+
+        <section class="py-12 bg-gray-100">
+            <div class="text-center mb-8">
+                <h2 class="text-3xl font-bold">Explore inspiring designs</h2>
+            </div>
+            <div class="container mx-auto px-4">
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                    <!-- Card singola per design -->
+                    <div class="bg-white rounded-lg overflow-hidden shadow-md">
+                        <img src="assets/08567BF2-1A25-4012-BA77-BF75414664C0.jpeg" alt="Design name"
+                            class="w-full h-64 object-cover"> <!-- Imposta altezza fissa per uniformità -->
+                        <div class="p-4">
+                            <h3 class="text-lg font-semibold truncate">Design Title</h3>
+                            <div class="flex items-center justify-between text-sm text-gray-600 mt-2">
+                                <div class="flex items-center">
+                                    <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" ...>
+                                        <!-- icona views --></svg>
+                                    43.3k
+                                </div>
+                                <div class="flex items-center">
+                                    <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" ...>
+                                        <!-- icona likes --></svg>
+                                    244
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Ripetere per ogni design nella galleria -->
+                    <div class="bg-white rounded-lg overflow-hidden shadow-md">
+                        <img src="assets/0888B83E-23A1-4E51-8D56-4BD0F8ED7228_4_5005_c.jpeg" alt="Design name"
+                            class="w-full h-64 object-cover"> <!-- Imposta altezza fissa per uniformità -->
+                        <div class="p-4">
+                            <h3 class="text-lg font-semibold truncate">Design Title</h3>
+                            <div class="flex items-center justify-between text-sm text-gray-600 mt-2">
+                                <div class="flex items-center">
+                                    <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" ...>
+                                        <!-- icona views --></svg>
+                                    43.3k
+                                </div>
+                                <div class="flex items-center">
+                                    <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" ...>
+                                        <!-- icona likes --></svg>
+                                    244
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-lg overflow-hidden shadow-md">
+                        <img src="assets/13DFFF08-7E08-409A-8B08-37239BE7B7A3_4_5005_c.jpeg" alt="Design name"
+                            class="w-full h-64 object-cover"> <!-- Imposta altezza fissa per uniformità -->
+                        <div class="p-4">
+                            <h3 class="text-lg font-semibold truncate">Design Title</h3>
+                            <div class="flex items-center justify-between text-sm text-gray-600 mt-2">
+                                <div class="flex items-center">
+                                    <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" ...>
+                                        <!-- icona views --></svg>
+                                    43.3k
+                                </div>
+                                <div class="flex items-center">
+                                    <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" ...>
+                                        <!-- icona likes --></svg>
+                                    244
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-lg overflow-hidden shadow-md">
+                        <img src="assets/17890611-1E5B-48B6-A2B0-E7C35DC04D09_4_5005_c.jpeg" alt="Design name"
+                            class="w-full h-64 object-cover"> <!-- Imposta altezza fissa per uniformità -->
+                        <div class="p-4">
+                            <h3 class="text-lg font-semibold truncate">Design Title</h3>
+                            <div class="flex items-center justify-between text-sm text-gray-600 mt-2">
+                                <div class="flex items-center">
+                                    <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" ...>
+                                        <!-- icona views --></svg>
+                                    43.3k
+                                </div>
+                                <div class="flex items-center">
+                                    <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" ...>
+                                        <!-- icona likes --></svg>
+                                    244
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-lg overflow-hidden shadow-md">
+                        <img src="assets/2A16565A-B422-4EB6-B7A5-D4234F7B2CC3.jpeg" alt="Design name"
+                            class="w-full h-64 object-cover"> <!-- Imposta altezza fissa per uniformità -->
+                        <div class="p-4">
+                            <h3 class="text-lg font-semibold truncate">Design Title</h3>
+                            <div class="flex items-center justify-between text-sm text-gray-600 mt-2">
+                                <div class="flex items-center">
+                                    <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" ...>
+                                        <!-- icona views --></svg>
+                                    43.3k
+                                </div>
+                                <div class="flex items-center">
+                                    <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" ...>
+                                        <!-- icona likes --></svg>
+                                    244
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-lg overflow-hidden shadow-md">
+                        <img src="assets/338715E9-FD5D-4748-B5BA-84F84836807B.jpeg" alt="Design name"
+                            class="w-full h-64 object-cover"> <!-- Imposta altezza fissa per uniformità -->
+                        <div class="p-4">
+                            <h3 class="text-lg font-semibold truncate">Design Title</h3>
+                            <div class="flex items-center justify-between text-sm text-gray-600 mt-2">
+                                <div class="flex items-center">
+                                    <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" ...>
+                                        <!-- icona views --></svg>
+                                    43.3k
+                                </div>
+                                <div class="flex items-center">
+                                    <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" ...>
+                                        <!-- icona likes --></svg>
+                                    244
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-lg overflow-hidden shadow-md">
+                        <img src="assets/63F8A11B-CD09-4DF0-AE5C-93041A50C066_4_5005_c.jpeg" alt="Design name"
+                            class="w-full h-64 object-cover"> <!-- Imposta altezza fissa per uniformità -->
+                        <div class="p-4">
+                            <h3 class="text-lg font-semibold truncate">Design Title</h3>
+                            <div class="flex items-center justify-between text-sm text-gray-600 mt-2">
+                                <div class="flex items-center">
+                                    <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" ...>
+                                        <!-- icona views --></svg>
+                                    43.3k
+                                </div>
+                                <div class="flex items-center">
+                                    <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" ...>
+                                        <!-- icona likes --></svg>
+                                    244
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-lg overflow-hidden shadow-md">
+                        <img src="assets/85763AAB-58D1-4A69-B909-397533DD314E_4_5005_c.jpeg" alt="Design name"
+                            class="w-full h-64 object-cover"> <!-- Imposta altezza fissa per uniformità -->
+                        <div class="p-4">
+                            <h3 class="text-lg font-semibold truncate">Design Title</h3>
+                            <div class="flex items-center justify-between text-sm text-gray-600 mt-2">
+                                <div class="flex items-center">
+                                    <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" ...>
+                                        <!-- icona views --></svg>
+                                    43.3k
+                                </div>
+                                <div class="flex items-center">
+                                    <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" ...>
+                                        <!-- icona likes --></svg>
+                                    244
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-lg overflow-hidden shadow-md">
+                        <img src="assets/D1F7187C-494B-4AF7-9E26-8636603CFC8D_4_5005_c.jpeg" alt="Design name"
+                            class="w-full h-64 object-cover"> <!-- Imposta altezza fissa per uniformità -->
+                        <div class="p-4">
+                            <h3 class="text-lg font-semibold truncate">Design Title</h3>
+                            <div class="flex items-center justify-between text-sm text-gray-600 mt-2">
+                                <div class="flex items-center">
+                                    <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" ...>
+                                        <!-- icona views --></svg>
+                                    43.3k
+                                </div>
+                                <div class="flex items-center">
+                                    <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" ...>
+                                        <!-- icona likes --></svg>
+                                    244
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-lg overflow-hidden shadow-md">
+                        <img src="assets/DE9A697B-4ABB-4F36-8A7A-56F8B78E55F4_4_5005_c.jpeg" alt="Design name"
+                            class="w-full h-64 object-cover"> <!-- Imposta altezza fissa per uniformità -->
+                        <div class="p-4">
+                            <h3 class="text-lg font-semibold truncate">Design Title</h3>
+                            <div class="flex items-center justify-between text-sm text-gray-600 mt-2">
+                                <div class="flex items-center">
+                                    <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" ...>
+                                        <!-- icona views --></svg>
+                                    43.3k
+                                </div>
+                                <div class="flex items-center">
+                                    <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" ...>
+                                        <!-- icona likes --></svg>
+                                    244
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                 <!-- Pulsante CTA -->
+        <div class="text-center mt-8">
+            <button class="px-6 py-3 border rounded-full text-sm font-medium hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                Browse more inspiration
+            </button>
+        </div>
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+
     </main>
     <footer>
         <!-- Footer content will go here -->
     </footer>
 </body>
+
 </html>
