@@ -9,18 +9,25 @@ input[type="search"]:focus {
 }
 
 @keyframes scroll {
-    0% {
-        transform: translateX(0);
-    }
-
-    100% {
-        transform: translateX(-50%);
-        /* Muove l'elemento per metà della sua lunghezza totale */
-    }
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%); /* Sposta tutti gli elementi del carosello */
+  }
 }
 
+.carousel-inner {
+  animation: scroll 30s linear infinite;
+}
+
+.carousel:hover .carousel-inner {
+  animation-play-state: paused; /* Ferma l'animazione quando si passa sopra */
+}
+
+
 .animate-scroll {
-    animation: scroll 30s linear infinite;
+    animation: scroll 20s linear infinite;
 }
 
 @keyframes marquee {
